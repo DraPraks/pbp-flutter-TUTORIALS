@@ -11,20 +11,21 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:football_news/main.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
+  testWidgets('Login page smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(const MyApp());
+    // Wait for animations and frames to settle
+    await tester.pumpAndSettle();
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+    // The Login page uses 'Login' as the AppBar title, header and button label
+    expect(find.text('Login'), findsNWidgets(3));
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
+    // Two TextFields: Username and Password
+    expect(find.text('Username'), findsOneWidget);
+    expect(find.text('Password'), findsOneWidget);
+    expect(find.byType(TextField), findsNWidgets(2));
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    // There should be a Login button
+    expect(find.widgetWithText(ElevatedButton, 'Login'), findsOneWidget);
   });
 }
