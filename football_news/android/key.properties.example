@@ -1,0 +1,12 @@
+# Sample key.properties for release signing
+# Copy this to android/key.properties (DO NOT commit!) and fill values.
+# Keys:
+# storePassword: keystore password
+# keyPassword: key password (often same as storePassword)
+# keyAlias: alias used when creating the keystore (e.g., "release")
+# storeFile: path to the keystore file relative to the project root (e.g., ../release-keystore.jks)
+
+storePassword=YOUR_STORE_PASSWORD
+keyPassword=YOUR_KEY_PASSWORD
+keyAlias=release
+storeFile=../release-keystore.jks
