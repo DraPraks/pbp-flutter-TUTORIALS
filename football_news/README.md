@@ -2,15 +2,7 @@
 
 A new Flutter project.
 
-## Getting Started
+[![Build Status](https://app.bitrise.io/app/4a878202-e811-4379-ba74-4bb012b68efd/status.svg?token=lh-Q8x_0rt_CZika4Lp--A&branch=main)](https://app.bitrise.io/app/4a878202-e811-4379-ba74-4bb012b68efd)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+download
+https://app.bitrise.io/app/4a878202-e811-4379-ba74-4bb012b68efd/installable-artifacts/a101fcdd2e04325f/public-install-page/85bfbb9e12f41660dc60f18e0d6d8074
